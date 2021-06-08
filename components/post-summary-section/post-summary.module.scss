@@ -6,5 +6,8 @@
   .grid {
     width: 100%;
     max-width: 1000px;
+    .gridItem {
+      height: 430px;
+    }
   }
 }
