@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) blog bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 Additional Configurations Included:
 
@@ -6,3 +6,4 @@ Additional Configurations Included:
 - Typescript
 - SCSS
 - Next Images
+- Markdown (remark + remark-html)
