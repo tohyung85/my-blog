@@ -30,7 +30,7 @@ export default function PostSummarySection({
 
   return (
     <div className={styles.section}>
-      <Grid container spacing={1} className={styles.grid}>
+      <Grid container spacing={3} className={styles.grid}>
         {allPosts ? renderPosts(allPosts) : "Loading"}
       </Grid>
     </div>

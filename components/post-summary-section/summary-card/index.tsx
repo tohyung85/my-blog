@@ -30,7 +30,10 @@ export default function PostSummaryCard({ post }: PostSummaryCardProps) {
 
   return (
     <Card className={styles.root}>
-      <CardActionArea onClick={() => cardClicked(post.slug)}>
+      <CardActionArea
+        className={styles.actionArea}
+        onClick={() => cardClicked(post.slug)}
+      >
         <CardMedia
           className={styles.media}
           image={post.coverImage}
@@ -56,10 +59,10 @@ export default function PostSummaryCard({ post }: PostSummaryCardProps) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button size="small" color="secondary">
           Share
         </Button>
-        <Button size="small" color="primary">
+        <Button size="small" color="secondary">
           Learn More
         </Button>
       </CardActions>
