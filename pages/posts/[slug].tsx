@@ -1,16 +1,12 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
-// import Container from "../../components/container";
-// import PostBody from "../../components/post-body";
-// import Header from "../../components/header";
-// import PostHeader from "../../components/post-header";
-// import Layout from "../../components/layout";
 import { getPostBySlug, getAllPosts } from "../api/posts";
-// import PostTitle from "../../components/post-title";
 import Head from "next/head";
-// import { CMS_NAME } from "../../lib/constants";
+import styles from "./slug.module.scss";
 import markdownToHtml from "../api/markdownToHtml";
 import { GetStaticProps } from "next";
+import PostLayout from "../../layouts/post-layout";
+import { Typography } from "@material-ui/core";
 
 export default function Post({ post, morePosts, preview }: any) {
   const router = useRouter();
@@ -18,11 +14,25 @@ export default function Post({ post, morePosts, preview }: any) {
     return <ErrorPage statusCode={404} />;
   }
   return (
-    <div>
-      {post.title}
-      {post.ogImage.url}
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
-    </div>
+    <PostLayout>
+      <div className={styles.container}>
+        <div
+          className={styles.coverImage}
+          style={{ backgroundImage: `url(${post.ogImage.url})` }}
+        />
+
+        <div className={styles.contentContainer}>
+          <Typography variant="h4" className={styles.title}>
+            {post.title}
+          </Typography>
+          <Typography
+            variant="body1"
+            className={styles.content}
+            dangerouslySetInnerHTML={{ __html: post.content }}
+          />
+        </div>
+      </div>
+    </PostLayout>
   );
 }
 

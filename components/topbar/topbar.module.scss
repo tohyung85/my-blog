@@ -1,0 +1,67 @@
+@import "../../sass-theme.scss";
+
+.container {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  .content {
+    padding: 1em;
+    width: 100%;
+    max-width: 1100px;
+    background: url("../../public/images/main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+
+    .appBar {
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .title {
+        .titleText {
+          color: white;
+          text-decoration: none;
+          &:hover {
+            color: $secondary-main;
+          }
+        }
+      }
+    }
+
+    .topbarTitle {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 2;
+      text-align: center;
+      padding: 4em 0 4em 0;
+      .titleText {
+        color: white;
+      }
+    }
+
+    .categories {
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .catItems {
+        margin-right: 1em;
+        .itemText {
+          color: white;
+          text-decoration: none;
+          &:hover {
+            color: $secondary-main;
+          }
+        }
+      }
+    }
+  }
+}
