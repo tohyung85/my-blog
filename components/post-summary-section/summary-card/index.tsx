@@ -13,6 +13,7 @@ export interface Post {
   title: string;
   excerpt: string;
   coverImage: string;
+  tags: string[];
   date: string;
   slug: string;
 }
@@ -58,14 +59,14 @@ export default function PostSummaryCard({ post }: PostSummaryCardProps) {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
+      {/* <CardActions>
         <Button size="small" color="secondary">
           Share
         </Button>
         <Button size="small" color="secondary">
           Learn More
         </Button>
-      </CardActions>
+      </CardActions> */}
     </Card>
   );
 }

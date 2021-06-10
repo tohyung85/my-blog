@@ -28,6 +28,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    height: 60px;
     @supports (-webkit-line-clamp: 3) {
       overflow: hidden;
       text-overflow: ellipsis;

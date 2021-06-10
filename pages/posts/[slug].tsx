@@ -18,17 +18,16 @@ export default function Post({ post, morePosts, preview }: any) {
       <div className={styles.container}>
         <div
           className={styles.coverImage}
-          style={{ backgroundImage: `url(${post.ogImage.url})` }}
+          style={{ backgroundImage: `url(${post.coverImage})` }}
         />
 
         <div className={styles.contentContainer}>
           <Typography variant="h4" className={styles.title}>
             {post.title}
           </Typography>
-          <Typography
-            variant="body1"
+          <div
             className={styles.content}
-            dangerouslySetInnerHTML={{ __html: post.content }}
+            dangerouslySetInnerHTML={{ __html: `${post.content}` }}
           />
         </div>
       </div>

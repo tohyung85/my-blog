@@ -6,10 +6,10 @@ export default function TopbarTitle() {
   return (
     <div className={styles.topbarTitle}>
       <Typography className={styles.titleText} variant="h2">
-        A Coder's Blog
+        Typical Wednesday
       </Typography>
       <Typography className={styles.titleText} variant="h4">
-        Here to learn
+        A blog for regular sharing and learning of all things tech
       </Typography>
     </div>
   );

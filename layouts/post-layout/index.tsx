@@ -9,7 +9,7 @@ export interface PostLayoutProps {
 export default function PostLayout({ children }: PostLayoutProps) {
   return (
     <div>
-      <Topbar title="My Blog" />
+      <Topbar title="Typical Wednesday" />
       <div className={styles.container}>{children}</div>
     </div>
   );

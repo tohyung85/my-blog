@@ -9,7 +9,7 @@ export interface MainLayoutProps {
 export default function MainLayout({ children }: MainLayoutProps) {
   return (
     <div className={styles.container}>
-      <Topbar title="My Blog" large />
+      <Topbar title="Typical Wednesday" large />
       {children}
     </div>
   );

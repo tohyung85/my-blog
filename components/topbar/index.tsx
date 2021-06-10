@@ -36,7 +36,7 @@ export default function Topbar(
           </Typography>
         </div>
         {large && <TopbarTitle />}
-        <div className={styles.categories}>
+        {/* <div className={styles.categories}>
           <Typography variant="h6" className={styles.catItems}>
             <Link className={styles.itemText} href="#">
               AWS
@@ -52,7 +52,7 @@ export default function Topbar(
               Backend
             </Link>
           </Typography>
-        </div>
+        </div> */}
       </div>
     </div>
   );
