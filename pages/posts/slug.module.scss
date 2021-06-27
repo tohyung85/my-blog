@@ -32,5 +32,13 @@
     img {
       width: 100%;
     }
+    // min-width: 0;
+
+    .content {
+      pre {
+        overflow: auto;
+        max-width: 95vw;
+      }
+    }
   }
 }
