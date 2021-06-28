@@ -3,7 +3,7 @@ title: "Set Up AWS Organizations"
 excerpt: "AWS Organizations is a very useful service for managing multiple AWS accounts"
 coverImage: "/images/setup-aws-organizations/aws-organizations.png"
 date: "2020-03-16T05:35:07.322Z"
-tags: ["aws"]
+tags: ["aws", "aws organizations"]
 ---
 
 ## Background & Use Case
