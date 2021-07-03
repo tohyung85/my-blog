@@ -93,6 +93,16 @@ You will now need to update the bucket policy to allow read access to the bucket
 
 ## Upload the Website Files
 
+If you are using NextJs, you will need to update your project next.config.js to include the following before you build and upload your files. You will need to do this or you will find that your pages will serve a 404 error when you reload them as mentioned in [this issue](https://stackoverflow.com/questions/63591544/next-js-how-to-make-links-work-with-exported-sites-when-hosted-on-aws-cloudfron)
+
+```js
+module.exports = {
+  trailingSlash: true,
+};
+```
+
+This configuration basically causes NextJs to export pages as index.html files and require trailing slashes, /about becomes /about/index.html and is routable via /about/, the Nexjs links and routers will still function as normal.
+
 You can now upload the web files which you wish to serve onto your bucket.
 
 1. Head back to the S3 buckets page, click on the bucket name and under the Objects tab click Upload.
