@@ -20,7 +20,7 @@ export default function MyApp(props: AppProps) {
   return (
     <React.Fragment>
       <Head>
-        <title>NextJs Material UI</title>
+        <title>Typical Wednesday</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
